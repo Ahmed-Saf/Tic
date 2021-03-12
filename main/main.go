@@ -1,3 +1,10 @@
+package main
+import(
+	"fmt"
+	"strings"
+	"strconv"
+)
+
 type player struct {
 	symbol rune
 	name   string
@@ -11,6 +18,7 @@ type game struct {
 
 func main() {
 	games := new(game)
+	fmt.Println()
 	printboard(games.gameboard)
 	games.player1.name = "first"
 	games.player2.name = "second"
